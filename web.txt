@@ -1,0 +1,461 @@
+Write a program to display accordion of Bootstrap
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code -->
+    
+        
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample" style="">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      
+    <!-- End Example Code -->
+  </body>
+</html>
+
+
+
+4) Event Handling Method in JS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Welcome To My Domain</title>
+<style>
+#sample{
+background: #000;
+padding: 20px;
+margin: 20px 0;
+color: lime;
+display: block;
+font: 48px monospace;
+}
+</style>
+</head>
+<body>
+<script>
+var t;
+function alertDelay() {
+t = setTimeout(Alertdisplay, 2000);
+}
+function Alertdisplay() {
+alert('Welcome User thank you for choosing the Alert features');
+}
+function alertClear() {
+clearTimeout(t);
+}
+var i;
+function time() {
+var date = new Date();
+document.getElementById("sample").innerHTML = date.toLocaleTimeString();
+}
+function timeStop() {
+clearInterval(i);
+}
+var i = setInterval(time, 1000);
+</script>
+<button onclick="alertDelay();">Show me the Alert After 2 second of your time</button>
+<button onclick="alertClear();">Cancel the Alert user settings</button>
+<p>Cuurent Time of your Machine is: <span id="sample"></span></p>
+<button onclick="timeStop();">Time is stopped</button>
+</body>
+</html>
+
+
+5.  Write a program to implement the different built-in mathematical functions using JavaScript
+
+
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>
+         <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+         <title>Math Functions Example</title>
+          </head> 
+          <body>
+             <h1>Math Functions Example</h1> 
+             <form> Enter a number:<input type="text" id="number"> 
+             <button type="button" onclick="calculateMathFunctions()">Calculate</button> 
+             </form>
+              <script>
+               // JavaScript code goes here 
+              function calculateMathFunctions() 
+              { 
+                // Get input values from the user
+                 var numberInput =document.getElementById("number").value; 
+                 // Check if the input is a valid number 
+                 if (!isNaN(numberInput)) 
+                 {
+                     // Math functions 
+                     var squareRoot = Math.sqrt(numberInput); 
+                     var absoluteValue = Math.abs(numberInput);
+                     var powerOfTwo = Math.pow(numberInput, 2); 
+                     var randomBetween0And1 = Math.random(); 
+                     var roundedNumber = Math.round(numberInput); 
+                     var floorValue = Math.floor(numberInput); 
+                     var ceilValue = Math.ceil(numberInput); 
+                    
+                // Display the results 
+                     alert(`Input Number: ${numberInput}\n\nMath Functions:\nSquare Root: ${squareRoot}\nAbsolute Value: ${absoluteValue}\nPower of Two: ${powerOfTwo}\nRandom between 0 and 1: ${randomBetween0And1}\nRounded Number: ${roundedNumber}\nFloor Value: ${floorValue}\nCeil Value: ${ceilValue}`); 
+                    } 
+                    else 
+                    { 
+                        alert("Invalid input. Please enter a valid number."); 
+} 
+} 
+</script> 
+</body>
+</html>
+
+
+
+
+
+Program 6: 
+Build web pages that can add dynamic data to the web pages using PHP and MySQL 
+
+Index.html
+
+<html>  
+<head>  
+    <title>PHP login system</title>  
+    
+    <link rel = "stylesheet" type = "text/css" href = "style.css">   
+</head>  
+<body>  
+    <div id = "frm">  
+        <h1>Login</h1>  
+        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+            <p>  
+                <label> UserName: </label>  
+                <input type = "text" id ="user" name  = "user" />  
+            </p>  
+            <p>  
+                <label> Password: </label>  
+                <input type = "password" id ="pass" name  = "pass" />  
+            </p>  
+            <p>     
+                <input type =  "submit" id = "btn" value = "Login" />  
+            </p>  
+        </form>  
+    </div>  
+      
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+</body>     
+</html>  
+Style.css
+
+body{   
+    background: #eee;  
+}  
+#frm{  
+    border: solid gray 1px;  
+    width:25%;  
+    border-radius: 2px;  
+    margin: 120px auto;  
+    background: white;  
+    padding: 50px;  
+}  
+#btn{  
+    color: #fff;  
+    background: #337ab7;  
+    padding: 7px;  
+    margin-left: 70%;  
+}
+
+Authentication.php
+<?php      
+    include('connection.php');  
+    $username = $_POST['user'];  
+    $password = $_POST['pass'];  
+      
+        //to prevent from mysqli injection  
+        $username = stripcslashes($username);  
+        $password = stripcslashes($password);  
+        $username = mysqli_real_escape_string($con, $username);  
+        $password = mysqli_real_escape_string($con, $password);  
+      
+        $sql = "select *from newdb where username = '$username' and password = '$password'";  
+        $result = mysqli_query($con, $sql);  
+        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
+        $count = mysqli_num_rows($result);  
+          
+        if($count == 1){  
+            echo "<h1><center> Login successful </center></h1>";  
+        }  
+        else{  
+            echo "<h1> Login failed. Invalid username or password.</h1>";  
+        }     
+?>  
+
+Connection.php
+
+<?php      
+    $host = "localhost";  
+    $user = "root";  
+    $password = '';  
+    $db_name = "logindata";  
+      
+    $con = mysqli_connect($host, $user, $password, $db_name);  
+    if(mysqli_connect_errno()) {  
+        die("Failed to connect with MySQL: ". mysqli_connect_error());  
+    }  
+?>  
+
+ 
+ 
+ 
+ 
+PROGRAM 01 -- Write a program to create the registration form with personal and 
+ academic information for the admission of UG degree in the university
+ using different input types of HTML5 tags.
+ <html>
+<head>
+<form>
+<body bgcolor="cyan">
+<marquee bgcolor="blue" height="30px"> KLE Technological University
+</marquee>
+<h1> STUDENT REGISTRATION FORM <h1>
+<br>
+<h2> PERSONAL INFORMATION </h2>
+<label> Name: </label>
+<input type="text">
+<br>
+<label> Name of parent/guardian: </label>
+<input type="text">
+<br>
+<label> Birthday:</label>
+<input type="date" name="d">
+<br>
+<label> Gender: </label>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female" checked> Female
+<br>
+<label> Address: </label>
+<textarea rows="5" cols="25"> </textarea>
+<br>
+<label> City/Town/Village: </label>
+<input type="text">
+<label> District: </label>
+<input type="text">
+<br>
+<label> State: </label>
+<input type="text">
+<label> Pincode: </label>
+<input type="text">
+<br>
+<label> Phone No(with STD code): </label>
+<input type="text">
+<br>
+<label> Mobile No: </label>
+<input type="text">
+<label> email: </label>
+<input type="email" name="Email">
+<br>
+<h2> ACADEMIC INFORMATION </h2>
+<label> SSLC Board Name: </label>
+<input type="text">
+<br>
+<label> SSLC(%): </label>
+<input type="text">
+<br>
+<label> choose a course: </label>
+<select name="course">
+<option name="PUC">PUC</option>
+<option name="Diploma">Diploma</option>
+</select>
+<br>
+<label> PUC/Diploma(%): </label>
+<input type="text">
+<br>
+<input type="submit" value="Register">
+</body>
+</html>
+
+
+2) Write a program to implement the external CSS for different user interface widgets. ExternalCSS.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Interface Widgets</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="widget">
+<h2>External CSS Example</h2>
+Username <input type="text" class="textbox"><br> Password <input type="password" class="password"><br>
+<button class="button">Click me</button>
+
+</div>
+
+</body>
+</html>
+
+style.css
+
+/* External CSS Styles for Widgets */
+.widget {
+border: 2px solid #333; padding: 10px;
+margin: 10px;
+display: inline-block;
+}
+
+.button {
+background-color: #4CAF50; color: white;
+padding: 10px 20px; display: inline-block; font-size: 16px; margin: 4px 2px;
+}
+
+.textbox, .password { width: 200px; padding: 8px; margin: 8px;
+}
+
+
+
+
+Write a program to explore inline and internal CSS of Basic layout of Website.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Website Layout</title>
+
+<style>
+/* Internal CSS Styles */ body {
+font-family: Arial, sans-serif; margin: 0;
+padding: 0;
+background-color: #f0f0f0;
+}
+
+header {
+background-color: #333; color: white;
+padding: 10px; text-align: center;
+}
+
+nav {
+background-color: #eee; padding: 10px;
+text-align: center;
+}
+
+section {
+padding: 20px;
+}
+
+article {
+margin-bottom: 20px;
+}
+
+footer {
+background-color: #333; color: white;
+padding: 10px; text-align: center;
+}
+
+/* Internal CSS for Inline Styling */
+.special-text { color: red;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+ 
+<header>
+<h1>KLE Technological University</h1>
+</header>
+
+<nav>
+<a href="#">Home</a> |
+<a href="#">About</a> |
+<a href="#">Contact</a>
+</nav>
+
+<section>
+<article>
+<h2>Welcome to KLE</h2>
+<p>KLE Dr.M S Sheshgiri College of Engineering and Technology, Belagavi belongs to KLE Society, a society which has a legacy of 107 years in the field of Education and is one of the largest education societies in the
+Asia continent.</p>
+<p class="special-text">The college aims to positively impact the student’s lives by making premium education affordable and accessible to everyone. </p>
+</article>
+
+<article>
+<h2>About Us</h2>
+<p>We believe that for learning to be effective, it needs to be delivered in a congenial environment that not just nurtures but stimulates the interest of the best minds that receive it. KLE DR.MSSCET offers a world-class infrastructure that supports the pursuit of knowledge and the exercise of individual interests.</p>
+</article>
+</section>
+
+<footer>
+&copy; 2024 Kle Tech Website. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+
